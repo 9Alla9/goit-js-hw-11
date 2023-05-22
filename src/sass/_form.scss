@@ -6,11 +6,7 @@
   gap: 5px;
   padding: 10px;
   z-index: 999;
-  background: radial-gradient(
-    circle,
-    rgba(12, 0, 255, 1) 0%,
-    rgba(251, 248, 7, 1) 100%
-  );
+  background: radial-gradient(circle, rgb(115, 237, 16) 0%, #016826 100%);
 }
 
 .form__container {
@@ -42,7 +38,7 @@
     width: 15px;
     height: 15px;
 
-    fill: #0000be;
+    fill: #a7a7f5;
   }
   transform: scale(1);
   transition: transform 300ms;
