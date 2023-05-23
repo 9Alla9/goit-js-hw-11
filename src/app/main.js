@@ -40,7 +40,7 @@ async function onSubmitForm(e) {
 
     if (hits.length === 0) {
       return Notify.failure(
-        'Sorry, there are no images matching your search query. Please try again.'
+        'The search string cannot be empty. Please specify your search query.'
       );
     }
 
@@ -106,14 +106,3 @@ async function onEntry(entries) {
 const observer = new IntersectionObserver(onEntry, {
   rootMargin: '100px',
 });
-
-function smoothScroll() {
-  const { height: cardHeight } = document
-    .querySelector('.gallery')
-    .firstElementChild.getBoundingClientRect();
-
-  window.scrollBy({
-    top: cardHeight * 2,
-    behavior: 'smooth',
-  });
-}
